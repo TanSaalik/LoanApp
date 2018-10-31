@@ -23,3 +23,4 @@
 * Issue 21 - "term" was including 0, but it should be 1 to 12 in MainActivity.java
 * Issue 22 - "rate" limits were set falsely. Fixed those in MainActivity.java
 * Issue 23 - Was missing activity "PlanActivity.java" in AndroidManifest.xml
+* Issue 24 - Gridview had 44 columns.
