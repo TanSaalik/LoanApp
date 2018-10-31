@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 Issue 13 - GridView was outside of LinearLayout borders in activity_plan.xml
+Issue 24 - Gridview had 44 columns.
 -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,6 +16,6 @@ Issue 13 - GridView was outside of LinearLayout borders in activity_plan.xml
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:stretchMode="columnWidth"
-        android:numColumns="44"/>
+        android:numColumns="4"/>
 
 </LinearLayout>
