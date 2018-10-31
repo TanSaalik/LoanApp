@@ -1,4 +1,4 @@
-#Issues
+# Issues
 
 * Issue 1 - LinearLayout had width written as weidth in activity_main.xml
 * Issue 2 - string was written as plural (strings) in activity_main.xml
