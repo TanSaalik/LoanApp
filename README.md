@@ -1,34 +1,25 @@
-# Task: 
-You had a client who wanted a loan application, further details about the application design and work principles are below. Unfortunately your colleague Helen did some really bad work.
-It is now your job to fix this app, so that it will work the way the client wants it to.
-While fixing the issues add a detailed report about what was wrong and how you fixed it in your github readme, in the application code add comments that trace back to the readme.
+#Issues
 
-Example in code: // Issue 1
-
-Example in readme: Issue 1: method pay was missing, added it because the application won't calculate sums without it.
-
-# Application description:
-This application lets user calculate the payment on a loan. Every time the loan is an annuity loan.
-In the top two fields one must be able to enter the borrowing costs and the loan principal respectively, while in the next two fields able to enter the number of years for the repayment of the loan and the number of terms per year.
-In the last field user must be ableto enter the interest rate, which is entered as the interest rate in percent per year.
-When clicking Calculate button, the program must calculate the term payment and show it in the field after text Payment, which is a read-only EditText.
-
-Before calculating the program must validate data:
-1. The cost must not be negative
-2. The loan must be positive
-3. The number of years must be an integer between 1 and 60 (both inclusive)
-4. The number of terms per years must be an integer between 1 and 12 (both inclusive)
-5. The interest rate must be positive and less than 50
-
-In the case of an error, the program must display an error message in the form of a simple Toast. 
-
-![screenshot_1540977348](https://user-images.githubusercontent.com/31770163/47778146-dd747180-dcfe-11e8-8281-8d2cd37db338.png)
-
-If user clicks on Amortization, the program must open another activity that shows an amortization plan:
-
-![screenshot_1540977362](https://user-images.githubusercontent.com/31770163/47778132-d8172700-dcfe-11e8-8899-95470cb370d0.png)
-
-
-____________________________________________________________________________________________________________________________________
-
-# May the odds be ever in your favour
+Issue 1 - LinearLayout had width written as weidth in activity_main.xml
+Issue 2 - string was written as plural (strings) in activity_main.xml
+Issue 3 - setInstance wasn't set to static in Loan.java
+Issue 4 - Multiple getters and setters in Loan.java
+Issue 5 - All EditText's were missing (in MainActivity.java) the reference to the EditText in xml file (activity_main.xml)
+Issue 6 - Issue 6 - 2 buttons (in MainActivity.java) were referenced after they were needed in xml file (activity_main.xml)
+Issue 7 - "disable" method wasn't created in MainActivity.java but was used in onCreate method
+Issue 8 - setText was marked as "setTextTo" in MainActivity.java. Needs to be "setText".
+Issue 9 - "year" and "term" were declared as strings in MainActivity.java
+Issue 10 - all Toast messages (5) were written falsely in MainActivity.java
+Issue 11 - 1 case where getInstance() was written with a typo in MainActivity.java
+Issue 12 - "year" and "term" were falsely converted into int in MainActivity.java
+Issue 13 - GridView was outside of LinearLayout borders in activity_plan.xml
+Issue 14 - "R.id.foo" was referenced although "R.string.foo" was needed in PlanActivity.java
+Issue 15 - String for illegal term value was missing in strings.xml
+Issue 16 - Validation of "year" was incorrect in MainActivity.java. Fixed limits and "or" was needed.
+Issue 17 - intent was missing "mainActivity.this" in MainActivity.java
+Issue 18 - EditText and Button were private. Changed it to public in MainActivity.java
+Issue 19 - adapter was falsely set in PlanActivity.java
+Issue 20 - TableLayout and LinearLayout were matching parent. So the "payment" part didn't fit the screen in activity_main.xml
+Issue 21 - "term" was including 0, but it should be 1 to 12 in MainActivity.java
+Issue 22 - "rate" limits were set falsely. Fixed those in MainActivity.java
+Issue 23 - Was missing activity "PlanActivity.java" in AndroidManifest.xml
